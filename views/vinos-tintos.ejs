@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.rtl.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+  <link rel="shortcut icon" href="#">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mochiy+Pop+P+One&family=Montserrat:wght@100&family=Poppins:ital,wght@1,100&family=Roboto+Condensed:wght@300&display=swap');
+  </style>
+
+  <title>La Bodeguita</title>
+</head>
+
+<body class="fadein">
+
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg navbar-light"
+    style="background: linear-gradient(to right, #6d1a36, #c26b5f, #6d1a36);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/productos" style="color:azure">La Bodeguita</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/productos" style="color:azure">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" style="color:azure">
+              Categorias
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+              style="background: linear-gradient(to right, #6d1a36, #c26b5f, #6d1a36);">
+              <li><a class="dropdown-item" href="vinos-tintos.ejs">Vino Tinto</a></li>
+              <li><a class="dropdown-item" href="vinos-blancos.ejs">Vino Blanco</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="espumantes.ejs">Espumantes</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="caracteristicas.ejs" style="color:azure">Caracteristicas</a>
+          </li>
+          <!--       
+                <li class="nav-item">
+                  <a class="nav-link" href="SesionEmpleados.ejs" style="color:azure">Acceso Empleados</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="SignIn.ejs" style="color:azure">Login</a>
+                </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="Register.ejs" style="color:azure">Registrate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="acerca.ejs" style="color:azure">Acerca de..</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Slider -->
+  <div class="container-slider">
+    <div class="slider" id="slider">
+      <div class="slider-section">
+        <img src="images/klipartz.com.png" alt="" class="slider-img">
+        <div class="slider-content">
+          <h2 class="slider-title">Ofertas Imperdibles!!!</h2>
+          <p class="slider-txt">50% off</p>
+          <a href="compra.ejs" class="slider-section-btn">Comprar Ahora!</a>
+        </div>
+      </div>
+      <div class="slider-section">
+        <img src="images/Vinos&copas.jpg" alt="" class="slider-img">
+        <div class="slider-content">
+          <h2 class="slider-title">Ofertas Imperdibles!!!</h2>
+          <p class="slider-txt">50% off</p>
+          <a href="compra.ejs" class="slider-section-btn">Comprar Ahora!</a>
+        </div>
+      </div>
+      <div class="slider-section">
+        <img src="images/cata de vinos.png" alt="" class="slider-img">
+        <div class="slider-content">
+          <h2 class="slider-title">Ofertas Imperdibles!!!</h2>
+          <p class="slider-txt">50% off</p>
+          <a href="compra.ejs" class="slider-section-btn">Comprar Ahora!</a>
+        </div>
+
+      </div>
+      <div class="slider-section">
+        <img src="images/vinos.jfif" alt="" class="slider-img">
+        <div class="slider-content">
+          <h2 class="slider-title">Ofertas Imperdibles!!!</h2>
+          <p class="slider-txt">50% off</p>
+          <a href="compra.ejs" class="slider-section-btn">Comprar Ahora!</a>
+        </div>
+      </div>
+    </div>
+    <div class="slider-btn slider-btn-rigth" id="btn-rigth">&#62;</div>
+    <div class="slider-btn slider-btn-left" id="btn-left">&#60;</div>
+  </div>
+
+  <!-- Fin Codigo Slider -->
+  <!-- Opciones Contacto y Promos-->
+  <div class="options-container">
+
+    <div class="options-container-prop">
+      <a href="https://web.whatsapp.com">
+        <img src="images/whatsapp.png" alt="whatsapp">
+      </a>
+      <p class="align-text">Te ayudamos a completar tu COMPRA</p>
+    </div>
+    <div class="options-container-prop">
+      <a href="https://www.mercadopago.com.ar/">
+        <img src="images/tarjetas-de-credito.png" alt="Promocion">
+      </a>
+      <p>Financiación Ahora 12</p>
+    </div>
+    <div class="options-container-prop">
+      <a href="#">
+        <img src="images/enviar.png" alt="envio">
+      </a>
+      <p>Envío a Domicilio SIN CARGO para compras superiores a $1.500</p>
+    </div>
+    <div class="options-container-prop">
+      <a href="#">
+        <img src="images/descuento.png" alt="descuento">
+      </a>
+      <p>Promociones - 25% en Bodegas Seleccionadas</p>
+    </div>
+
+  </div>
+
+  <!-- Productos -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm">
+        <div class="container-body-card">
+          <img class="card-img-top" src="images/1663749051.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Partridge</h5>
+            <p class="card-text">Red Blend</p>
+            <p class="card-text">$ 405</p>
+            <a href="#">
+              <i class="product-icon fas fa-cart-plus"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm">
+        <div class="container-body-card">
+          <img class="card-img-top" src="images/1663749057.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Las Perdices</h5>
+            <p class="card-text">Red Blend</p>
+            <p class="card-text">$ 630</p>
+            <a href="#">
+              <i class="product-icon fas fa-cart-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="container-body-card">
+          <img class="card-img-top" src="images/1663749060.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Rutini</h5>
+            <p class="card-text">Cabernet-Malbec</p>
+            <p class="card-text">$ 1533</p>
+            <a href="#">
+              <i class="product-icon fas fa-cart-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="container-body-card">
+          <img class="card-img-top" src="images/1663749066.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Zuccardi Serie A</h5>
+            <p class="card-text">Malbec</p>
+            <p class="card-text">$ 1092</p>
+            <a href="#">
+              <i class="product-icon fas fa-cart-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="container-body-card">
+          <img class="card-img-top" src="images/1663749081.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">D.V. Catena</h5>
+            <p class="card-text">Malbec</p>
+            <p class="card-text">$ 1350</p>
+            <a href="#">
+              <i class="product-icon fas fa-cart-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="container-body-card">
+          <img class="card-img-top" src="images/1663749075.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Trumpeter</h5>
+            <p class="card-text">Malbec</p>
+            <p class="card-text">$ 890</p>
+            <a href="#">
+              <i class="product-icon fas fa-cart-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="container-body-card">
+          <img class="card-img-top" src="images/1663749072.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Fabre Montmayour</h5>
+            <p class="card-text">Vino Tinto Malbec</p>
+            <p class="card-text">$ 1450</p>
+            <a href="#">
+              <i class="product-icon fas fa-cart-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="container-body-card">
+          <img class="card-img-top" src="images/1663749084.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Alambrado</h5>
+            <p class="card-text">Vino Tinto Malbec</p>
+            <p class="card-text">$ 1050</p>
+            <a href="#">
+              <i class="product-icon fas fa-cart-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="container-body-card">
+          <img class="card-img-top" src="images/1663749156.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Luigi Bosca</h5>
+            <p class="card-text">Vino Tinto Malbec</p>
+            <p class="card-text">$ 1150</p>
+            <a href="#">
+              <i class="product-icon fas fa-cart-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="container-body-card">
+          <img class="card-img-top" src="images/1671715024.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Salentien</h5>
+            <p class="card-text">Vino Tinto Malbec</p>
+            <p class="card-text">$ 980</p>
+            <a href="#">
+              <i class="product-icon fas fa-cart-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="container-body-card">
+          <img class="card-img-top" src="images/1671686499.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Pulenta</h5>
+            <p class="card-text">Vino Tinto Malbec</p>
+            <p class="card-text">$ 1450</p>
+            <a href="#">
+              <i class="product-icon fas fa-cart-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="container-body-card">
+          <img class="card-img-top" src="images/1671715112.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Enzo Bianchi</h5>
+            <p class="card-text">Vino Tinto Malbec</p>
+            <p class="card-text">$ 1650</p>
+            <a href="#">
+              <i class="product-icon fas fa-cart-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Fin Productos -->
+  <!-- Footer -->
+  <footer>
+    <div class="container-footer">
+      <div class="container-footer-detail">
+        <div class="container-footer-title">
+          <h5>Ayuda</h5>
+        </div>
+        <div class="container-help">
+          <div>
+            <a href="preguntas.ejs">Como Comprar</a>
+          </div>
+          <div>
+            <a href="preguntas.ejs">Envíos</a>
+          </div>
+          <div>
+            <a href="acerca.ejs">Nosotros</a>
+          </div>
+          <div>
+            <a href="preguntas.ejs">Preguntas Frecuentes</a>
+          </div>
+          <div>
+            <a href="tyc.ejs">Términos y Condiciones</a>
+          </div>
+        </div>
+      </div>
+      <div class="container-footer-detail">
+        <div class="container-footer-title">
+          <h5>Contacto</h5>
+        </div>
+        <div class="container-footer-contact">
+          <div>
+            <p>
+              11-9977-4422 (Whatsapp)<br>
+              Lunes a Viernes de 8 a 20hs<br>
+              info@labodeguita.com.ar<br>
+              Oficinas<br>
+              Santiago del Estero 125 CABA<br>
+              Argentina<br>
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="container-footer-detail">
+        <div class="container-footer-title">
+          <h5>Compras</h5>
+        </div>
+        <div class="container-help">
+          <div>
+            <a href="vinos-tintos.ejs">Vino Tinto</a>
+          </div>
+          <div>
+            <a href="vinos-blancos.ejs">Vino Blanco</a>
+          </div>
+          <div>
+            <a href="espumantes.ejs">Espumantes</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="container-footer-detail">
+        <div class="container-footer-title">
+          <h5>Seguinos</h5>
+        </div>
+        <div class="container-help">
+          <div class="redes-img">
+            <a href="http://www.instagram.com">
+              <img src="images/instagramblack.png" alt="instagram" class="redes-img">
+            </a>
+
+            <a href="http://www.facebook.com">
+              <img src="images/facebookblack.png" alt="facebook" class="redes-img">
+            </a>
+            <a href="http://www.twitter.com">
+              <img src="images/twitter.png" alt="twitter" class="redes-img">
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </footer>
+
+  <script src="slider.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script src="all.min.js"></script>
+
+</body>
+
+</html>

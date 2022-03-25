@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección de productos</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="/css/styles1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mochiy+Pop+P+One&family=Montserrat:wght@100&family=Poppins:ital,wght@1,100&family=Roboto+Condensed:wght@300&display=swap');
+    </style>
+</head>
+
+<body class="fadein">
+
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light"
+        style="background: linear-gradient(to right, #6d1a36, #c26b5f, #6d1a36);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/productos" style="color:azure">La Bodeguita</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/productos" style="color:azure">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color:azure">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                            style="background: linear-gradient(to right, #6d1a36, #c26b5f, #6d1a36);">
+                            <li><a class="dropdown-item" href="/vinos-tintos.ejs">Vino Tinto</a></li>
+                            <li><a class="dropdown-item" href="/vinos-blancos.ejs">Vino Blanco</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/espumantes.ejs">Espumantes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/caracteristicas.ejs" style="color:azure">Caracteristicas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Register.ejs" style="color:azure">Registrate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/acerca.ejs" style="color:azure">Acerca de..</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <h2 style="text-align: center;">Crear un producto</h2>
+
+
+
+    <!-- formulario -->
+
+    <div class="container-body text-center">
+
+        <div class="container-body-img">
+            <img src="/images/fondo_vino_recortado.jpg" alt="">
+        </div>
+
+        <div class="container-detail">
+
+
+            <form action="/productos/guardar" method="POST" enctype="multipart/form-data">
+
+                <div class="login-container">
+                    <!-- si no se usa archivos file en el form no usar enctype -->
+
+                    <div>
+                        <label for="nombreArt">Articulo</label>
+                        <input style="font-size:13px; " type="text" name="nombre" class="form-control" id="nombreArt"
+                            aria-describedby="nombreArt" placeholder="Ingrese el nombre del vino">
+                    </div>
+
+
+                    <label for="Categoria" class="">Categoria</label>
+                    <select class="form-control" style="font-size:13px; " name="categoria" id="Categoria">
+                        <option value="Blanco">Vinos Blancos</option>
+                        <option value="Tinto">Vinos Tintos</option>
+                        <option value="Espumeantes">Vinos Espumantes</option>
+                    </select>
+
+
+                    <div>
+                        <label for="Precio" class="">Precio </label>
+                        <input style="font-size:13px; " type="number" name="precio" class="form-control" id=" Precio"
+                            placeholder="$ Precio">
+                    </div>
+
+                    <div>
+                        <label for="Archivo" >Imagen de Articulo</label>
+                        <input style="font-size:13px" class="form-control " class="form-control-btn btn btn-danger"
+                            type="file" id="Archivo" name="imagen" required="true">
+                    </div>
+
+
+                    <label>Descripcion</label> <br>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Escriba una descripcion" style="height: 100px"
+                            name="descripcion"></textarea>
+                        <label for="floatingTextarea2">Escriba una descripcion</label>
+                    </div>
+                    <br>
+                    <div>
+                        <button type="submit" class="form-control-btn btn btn-danger">Guardar</button>
+                    </div>
+            </form>
+            <br>
+            <div>
+                <a class="form-control-btn btn" href="/productos" style="color: white;">Volver a productos</a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+
+
+
+
+    <script src="/bootstrap.min.js"></script>
+    <script src="/all.min.js"></script>
+
+
+</body>
+
+</html>

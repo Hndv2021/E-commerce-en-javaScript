@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.rtl.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+  <link rel="shortcut icon" href="#">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mochiy+Pop+P+One&family=Montserrat:wght@100&family=Poppins:ital,wght@1,100&family=Roboto+Condensed:wght@300&display=swap');
+  </style>
+
+  <title>La Bodeguita</title>
+</head>
+
+<body class="fadein">
+
+
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg navbar-light"
+    style="background: linear-gradient(to right, #6d1a36, #c26b5f, #6d1a36);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/productos" style="color:azure">La Bodeguita</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/productos" style="color:azure">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" style="color:azure">
+              Categorias
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+              style="background: linear-gradient(to right, #6d1a36, #c26b5f, #6d1a36);">
+              <li><a class="dropdown-item" href="vinos-tintos.ejs">Vino Tinto</a></li>
+              <li><a class="dropdown-item" href="vinos-blancos.ejs">Vino Blanco</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="espumantes.ejs">Espumantes</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="caracteristicas.ejs" style="color:azure">Caracteristicas</a>
+          </li>
+
+          <!--    <li class="nav-item">
+                  <a class="nav-link" href="SesionEmpleados.ejs" style="color:azure">Acceso Empleados</a>
+                </li> -->
+          <!--    <li class="nav-item">
+                  <a class="nav-link" href="SignIn.ejs" style="color:azure">Login</a>
+                </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="Register.ejs" style="color:azure">Registrate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="acerca.ejs" style="color:azure">Acerca de..</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container-acerca">
+    <h1 class="empresa">La Empresa</h1>
+    <img src="images/bodega.jpg" alt="bodega">
+    <p>Con más de 40 años de trayectoria, Vinoteca La Bodeguita se afianza con 10 sucursales de primer nivel, espacios
+      de cata, personal especializado y la representación de las mejores bodegas nacionales e internacionales.
+      Nuestra misión es brindar una experiencia de compra superior, siempre con precios muy competitivos. Nos diferencia
+      la experiencia y el conocimiento sobre los productos que ofrecemos y la vocación de servicio de todo nuestro
+      personal.
+      Buscamos salir de la pretensión puramente comercial de la fórmula de " los vinos más vendidos". Para aventurarnos
+      en la búsqueda de aquellas producciones cuidadas, de alta personalidad, que sean referentes sinceros de nuestros
+      terruños. De las producciones más arriesgadas de prestigiosos maestros consagrados, como las de una creciente
+      hondada de jóvenes enólogos, que marcaran su impronta, a causa de su pasión y su arte.</p>
+  </div>
+  <div class="container-acerca">
+    <h1 class="empresa">Compra Online</h1>
+    <img src="images/violeta.jpg" alt="bodega">
+    <p>Bienvenidos a nuestra tienda. Estamos orgullosos de ofrecerle una amplia selección de las mejores bebidas,
+      alimentos gourmet y accesorios.
+      En nuestro sitio, podrá navegar por las distintas categorías de Vinos, Espumantes, bebidas de Alto Grado o
+      Espirituosas, Cervezas, Accesorios, Cavas y Alimentos.
+      Consúltenos en cualquier momento de su visita para conocer más sobre productos, compras al por mayor o incluso,
+      pedidos para eventos y regalos corporativos.</p>
+  </div>
+  <div class="container-acerca">
+    <h1 class="empresa">Pagos y entregas</h1>
+    <img src="images/bod.jpg" alt="bodega">
+    <p>Brindamos flexibilidad en los pagos online aceptando todas las tarjetas de crédito, MercadoPago, pago al retirar
+      y transferencias bancarias. Siempre con promociones vigentes.
+      Todos los pedidos se procesan inmediatamente al ser recibidos, aunque es posible que necesitemos contactarlo para
+      verificar los datos de facturación.
+      Realizamos envíos a todo el país, pudiendo también retirar su compra en cualquiera de nuestras sucursales.
+    </p>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container-footer">
+      <div class="container-footer-detail">
+        <div class="container-footer-title">
+          <h5>Ayuda</h5>
+        </div>
+        <div class="container-help">
+          <div>
+            <a href="preguntas.ejs">Como Comprar</a>
+          </div>
+          <div>
+            <a href="preguntas.ejs">Envíos</a>
+          </div>
+          <div>
+            <a href="acerca.ejs">Nosotros</a>
+          </div>
+          <div>
+            <a href="preguntas.ejs">Preguntas Frecuentes</a>
+          </div>
+          <div>
+            <a href="tyc.ejs">Términos y Condiciones</a>
+          </div>
+        </div>
+      </div>
+      <div class="container-footer-detail">
+        <div class="container-footer-title">
+          <h5>Contacto</h5>
+        </div>
+        <div class="container-footer-contact">
+          <div>
+            <p>
+              11-9977-4422 (Whatsapp)<br>
+              Lunes a Viernes de 8 a 20hs<br>
+              info@labodeguita.com.ar<br>
+              Oficinas<br>
+              Santiago del Estero 125 CABA<br>
+              Argentina<br>
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="container-footer-detail">
+        <div class="container-footer-title">
+          <h5>Compras</h5>
+        </div>
+        <div class="container-help">
+          <div>
+            <a href="vinos-tintos.ejs">Vino Tinto</a>
+          </div>
+          <div>
+            <a href="vinos-blancos.ejs">Vino Blanco</a>
+          </div>
+          <div>
+            <a href="espumantes.ejs">Espumantes</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="container-footer-detail">
+        <div class="container-footer-title">
+          <h5>Seguinos</h5>
+        </div>
+        <div class="container-help">
+          <div class="redes-img">
+            <a href="http://www.instagram.com">
+              <img src="images/instagramblack.png" alt="instagram" class="redes-img">
+            </a>
+
+            <a href="http://www.facebook.com">
+              <img src="images/facebookblack.png" alt="facebook" class="redes-img">
+            </a>
+            <a href="http://www.twitter.com">
+              <img src="images/twitter.png" alt="twitter" class="redes-img">
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </footer>
+
+
+  <script src="bootstrap.min.js"></script>
+  <script src="all.min.js"></script>
+  <script src="slider.js"></script>
+
+</body>
+
+</html>

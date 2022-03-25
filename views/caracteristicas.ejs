@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.rtl.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+  <link rel="shortcut icon" href="#">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mochiy+Pop+P+One&family=Montserrat:wght@100&family=Poppins:ital,wght@1,100&family=Roboto+Condensed:wght@300&display=swap');
+  </style>
+
+  <title>La Bodeguita</title>
+</head>
+
+<body class="fadein">
+
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg navbar-light"
+    style="background: linear-gradient(to right, #6d1a36, #c26b5f, #6d1a36);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/productos" style="color:azure">La Bodeguita</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/productos" style="color:azure">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" style="color:azure">
+              Categorias
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+              style="background: linear-gradient(to right, #6d1a36, #c26b5f, #6d1a36);">
+              <li><a class="dropdown-item" href="vinos-tintos.ejs">Vino Tinto</a></li>
+              <li><a class="dropdown-item" href="vinos-blancos.ejs">Vino Blanco</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="espumantes.ejs">Espumantes</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="caracteristicas.ejs" style="color:azure">Caracteristicas</a>
+          </li>
+
+          <!--      <li class="nav-item">
+                  <a class="nav-link" href="SesionEmpleados.ejs" style="color:azure">Acceso Empleados</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="SignIn.ejs" style="color:azure">Login</a>
+                </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="Register.ejs" style="color:azure">Registrate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="acerca.ejs" style="color:azure">Acerca de..</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-caracteristica">
+    <h1 class="cepa">Malbec</h1>
+    <img src="images/malbek.jpg" alt="malbec">
+    <p>Insignia de nuestro país en el exterior y en el mercado interno. Fue traído de Francia a mediados de 1800. Hubo
+      dos factores determinantes a la hora de convertirla en una variedad característica de Argentina: la primera, las
+      particularidades que le dio su contacto con el clima, latitud y la tierra de acá (muy diferentes a las de Sur
+      Oeste de Francia); la segunda, una plaga que arrasó con las plantaciones de Côt poco después de que se trajera a
+      la Argentina y su impacto en la reducción de plantaciones.
+      Si bien nuestro país no es hoy por hoy el único que produce Malbec, sí es el que más volumen de plantaciones tiene
+      y sus vinos han recibido muchísimos premios. Más del 80 por ciento de los viñedos de Malbec están en Mendoza (en
+      Luján de Cuyo y Valle de Uco) aunque también se produce en el Norte del país con sus características diferentes y
+      particularidades.
+      “Lo que pasó de interesante con el Malbec es que es un vino que se dio mejor acá que en su tierra de origen. Eso y
+      que es un vino muy amable y fácil de tomar por sus características”, asegura Griguol.</p>
+  </div>
+
+  <div class="container-caracteristica">
+    <h1 class="cepa">Torrontés</h1>
+    <img src="images/torrontes.jpg" alt="torrontes">
+    <p>Cepa única de nuestro país.Esta variedad de vino blanco extra perfumado se asocia al norte de nuestro país. Se
+      trata de una cepa criolla que tiene tres variedades: torrontés mendocino, sanjuanino, y riojano, el que mejores
+      condiciones tiene para dar vinos de calidad. “El Torrontés riojano es una cepa que tiene muchos antecedentes: de
+      1600 en adelante ya hay registro de una variedad en la región y en 1800 ya se exportaba de La Rioja un vino blanco
+      que no se llamaba así pero compartía características”, explica Rodolfo Griguol, Doctor en Enología y Gerente de
+      Enología de bodegas La Riojana Coop.
+      Con su estilo extra perfumado y la particularidad de que no se conoce ninguno similar en otros países, este vino
+      blanco ya ganó más de un galardón internacional y apunta a lograr muchos más. “El Riojano es un vino único, más
+      interesante por sus particularidades que ningún otro. Exige más trabajo porque quien nunca lo probó puede incluso
+      sentirlo demasiado perfumado”, reflexiona Griguol.</p>
+  </div>
+
+  <div class="container-caracteristica">
+    <h1 class="cepa">Merlot</h1>
+    <img src="images/merlot.jpg" alt="merlot">
+    <p>Una cepa de amor y odio. Dicen quienes trabajan en vinos que la desgracia de esta cepa empezó con la célebre
+      película Entre Copas (lo mismo que el éxito del PinotNoir). Pero como todo lo que sube tiene que bajar -y
+      viceversa- hace un tiempo que los sommeliers de todo el mundo volvieron sobre este vino que genera amores y odios.
+      Varios Merlot de estas regiones estuvieron en la lista de destacados, lo cierto es que todavía la tendencia en la
+      siembra de esta variedad está en baja.
+      Aterciopelado y más suave que su primo hermano el Cabernet, este vino tinto típico de la zona de Burdeos es fácil
+      de tomar y acompaña muy bien una cantidad de platos. Porque no hay tantos en góndola, quienes lo defienden dicen
+      que es más fácil acertar con un Merlot que con tantos otros vinos, solo hay que salir de lo conocido y darle una
+      chance.</p>
+  </div>
+
+  <div class="container-caracteristica">
+    <h1 class="cepa">Chardonnay</h1>
+    <img src="images/chardonnay.jfif" alt="chardonnay">
+    <p>Una de las preferidas en el país. Igual que el Cabernet Sauvignon y el Merlot, el Chardonnnay es una de las uvas
+      que vinieron de la región de Borgoña y calaron profundo en nuestras costumbres. “Es el varietal blanco que más se
+      asemeja a un tinto: tiene mucha estructura en boca y mucha personalidad y de hecho, se le hace una fermentación
+      que se llama maloláctica, muy común en los vinos tintos de mediana y alta gama”, explica Griguol. Además de los
+      blends y varietales, el Chardonnay se usa mucho como base para espumantes, de ahí que sea una de las cepas que más
+      plantaciones tiene en Mendoza, San juan y La Rioja. Vino blanco más versátil de todos, que sea uno de los
+      favoritos no es un misterio.</p>
+  </div>
+
+  <div class="container-caracteristica">
+    <h1 class="cepa">Semillón</h1>
+    <img src="images/semillon.jpg" alt="semillon">
+    <p>La nueva revelación. Poco representativa en cuanto a la cantidad de hectáreas sembradas, pero muy ruidosa por lo
+      particular de esa decisión, el Semillón es una de las grandes revelaciones de los últimos tres años. Originaria de
+      Francia y hoy más reconocida por sus vinos australianos, esta cepa llegó al país en el mismo momento que el Malbec
+      y estuvo a muy poco de perderse cuando un grupo de enólogos decidió darle una oportunidad. Se trata de un vino
+      blanco tan suave y sutil que muchos años fue usado de base, pero que correctamente elaborado dio resultados únicos
+      como varietal. No hay muchos antecedentes previos a 2015, quienes más valoran el vino argentino lo recomiendan
+      probar. Para Griguol lo más interesante que tiene nuestro país es la enorme variedad de climas que permite lograr
+      vinos únicos, una cualidad que a veces la costumbre desdibuja. “Lo que pasa mucho es que el consumidor se queda
+      con las variedades que conoce en vez de animarse a probar nuevas. En países como Francia, donde la gente tiene
+      mucha cultura del vino, eso no es tan así”, reflexiona. Lo cierto es que Argentina tiene la gran fortuna de
+      ofrecer excelentes condiciones para una cantidad de variedades. Cabernet Sauvignon, Merlot, Sirah, Bonarda y Pinot
+      Noir son algunas de las cepas de tintos que se dan con características únicas en estas latitudes, igual que el
+      Torrontés, el Chardonnay y el Sauvignon Blanc.</p>
+  </div>
+
+  <footer>
+    <div class="container-footer">
+      <div class="container-footer-detail">
+        <div class="container-footer-title">
+          <h5>Ayuda</h5>
+        </div>
+        <div class="container-help">
+          <div>
+            <a href="preguntas.ejs">Como Comprar</a>
+          </div>
+          <div>
+            <a href="preguntas.ejs">Envíos</a>
+          </div>
+          <div>
+            <a href="acerca.ejs">Nosotros</a>
+          </div>
+          <div>
+            <a href="preguntas.ejs">Preguntas Frecuentes</a>
+          </div>
+          <div>
+            <a href="tyc.ejs">Términos y Condiciones</a>
+          </div>
+        </div>
+      </div>
+      <div class="container-footer-detail">
+        <div class="container-footer-title">
+          <h5>Contacto</h5>
+        </div>
+        <div class="container-footer-contact">
+          <div>
+            <p>
+              11-9977-4422 (Whatsapp)<br>
+              Lunes a Viernes de 8 a 20hs<br>
+              info@labodeguita.com.ar<br>
+              Oficinas<br>
+              Santiago del Estero 125 CABA<br>
+              Argentina<br>
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="container-footer-detail">
+        <div class="container-footer-title">
+          <h5>Compras</h5>
+        </div>
+        <div class="container-help">
+          <div>
+            <a href="vinos-tintos.ejs">Vino Tinto</a>
+          </div>
+          <div>
+            <a href="vinos-blancos.ejs">Vino Blanco</a>
+          </div>
+          <div>
+            <a href="espumantes.ejs">Espumantes</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="container-footer-detail">
+        <div class="container-footer-title">
+          <h5>Seguinos</h5>
+        </div>
+        <div class="container-help">
+          <div class="redes-img">
+            <a href="http://www.instagram.com">
+              <img src="images/instagramblack.png" alt="instagram" class="redes-img">
+            </a>
+
+            <a href="http://www.facebook.com">
+              <img src="images/facebookblack.png" alt="facebook" class="redes-img">
+            </a>
+            <a href="http://www.twitter.com">
+              <img src="images/twitter.png" alt="twitter" class="redes-img">
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </footer>
+
+
+  <script src="bootstrap.min.js"></script>
+
+  <script src="all.min.js"></script>
+  <script src="slider.js"></script>
+
+
+</body>
+
+</html>

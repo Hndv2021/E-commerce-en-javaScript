@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.rtl.css">
+  <link rel="stylesheet" href="css/styles1.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Roboto:wght@100&display=swap"
+    rel="stylesheet">
+  <title>Registro</title>
+</head>
+
+<body class="fadein">
+
+
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg navbar-light"
+    style="background: linear-gradient(to right, #6d1a36, #c26b5f, #6d1a36);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/productos" style="color:azure">La Bodeguita</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/productos" style="color:azure">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" style="color:azure">
+              Categorias
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+              style="background: linear-gradient(to right, #6d1a36, #c26b5f, #6d1a36);">
+              <li><a class="dropdown-item" href="vinos-tintos.ejs">Vino Tinto</a></li>
+              <li><a class="dropdown-item" href="vinos-blancos.ejs">Vino Blanco</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="espumantes.ejs">Espumantes</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="caracteristicas.ejs" style="color:azure">Caracteristicas</a>
+          </li>
+
+          <!--         <li class="nav-item">
+              <a class="nav-link" href="SesionEmpleados.ejs" style="color:azure">Acceso Empleados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="SignIn.ejs" style="color:azure">Login</a>
+            </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="Register.ejs" style="color:azure">Registrate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="acerca.ejs" style="color:azure">Acerca de..</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- contenedor  -->
+  <div class="container-body">
+    <div class="container-body-img">
+      <img src="images/fondo_vino_recortado.jpg" alt="">
+    </div>
+
+    <div class="container-detail">
+      <div class="clasedetexto360">
+        <h1>Registro de Usuario</h1>
+      </div>
+      <div>
+
+
+        <form action="registroExitoso.ejs" >
+
+          <div class="login-container">
+
+            <div>
+              <label for="Nombre"> Nombre y apellido</label>
+              <input type="text" class="form-control" name="Nombre" required>
+            </div>
+
+            <div>
+              <label for="Apellido">Nombre de Usuario</label>
+              <input type="" class="form-control" name="users" required>
+            </div>
+
+            <div>
+              <label for="Apellido">Cree su Contraseña</label>
+              <input type="text" class="form-control" name="pass" required>
+            </div>
+            <br>
+
+            <div>
+              <label for="Connected" name="Connected"> Acepta los terminos y
+                condiciones
+              </label>
+              <input type="checkbox" class="form-check-input" name="Connected" id="">
+            </div>
+
+            <div class="container-button">
+              <button type="submit" class="btn btn-danger">
+                Registrate!
+              </button>
+            </div>
+
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- footer  -->
+  <footer>
+    <div class="container-footer">
+      <div class="container-footer-detail">
+        <div class="container-footer-title">
+          <h5>Ayuda</h5>
+        </div>
+        <div class="container-help">
+          <div>
+            <a href="preguntas.ejs">Como Comprar</a>
+          </div>
+          <div>
+            <a href="preguntas.ejs">Envíos</a>
+          </div>
+          <div>
+            <a href="acerca.ejs">Nosotros</a>
+          </div>
+          <div>
+            <a href="preguntas.ejs">Preguntas Frecuentes</a>
+          </div>
+          <div>
+            <a href="tyc.ejs">Términos y Condiciones</a>
+          </div>
+        </div>
+      </div>
+      <div class="container-footer-detail">
+        <div class="container-footer-title">
+          <h5>Contacto</h5>
+        </div>
+        <div class="container-footer-contact">
+          <div>
+            <p>
+              11-9977-4422 (Whatsapp)<br>
+              Lunes a Viernes de 8 a 20hs<br>
+              info@labodeguita.com.ar<br>
+              Oficinas<br>
+              Santiago del Estero 125 CABA<br>
+              Argentina<br>
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="container-footer-detail">
+        <div class="container-footer-title">
+          <h5>Compras</h5>
+        </div>
+        <div class="container-help">
+          <div>
+            <a href="vinos-tintos.ejs">Vino Tinto</a>
+          </div>
+          <div>
+            <a href="vinos-blancos.ejs">Vino Blanco</a>
+          </div>
+          <div>
+            <a href="espumantes.ejs">Espumantes</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="container-footer-detail">
+        <div class="container-footer-title">
+          <h5>Seguinos</h5>
+        </div>
+        <div class="container-help">
+          <div class="redes-img">
+            <a href="http://www.instagram.com">
+              <img src="images/instagramblack.png" alt="instagram" class="redes-img">
+            </a>
+
+            <a href="http://www.facebook.com">
+              <img src="images/facebookblack.png" alt="facebook" class="redes-img">
+            </a>
+            <a href="http://www.twitter.com">
+              <img src="images/twitter.png" alt="twitter" class="redes-img">
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </footer>
+
+  <script src="bootstrap.min.js"></script>
+
+
+</body>
+
+
+
+</html>
